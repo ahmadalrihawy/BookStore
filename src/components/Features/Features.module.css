@@ -1,0 +1,83 @@
+.features {
+  position: relative;
+  height: 95vh;
+  padding-top: 50px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 50px;
+}
+.featuresImg {
+  position: relative;
+}
+.imgShadow {
+  position: relative;
+  width: 550px;
+  height: 500px;
+  background-color: var(--se-color);
+  left: -20px;
+  top: 20px;
+  border-radius: 5px;
+}
+.feImg {
+  position: absolute;
+  border-radius: 5px;
+  top: 0px;
+  width: 550px;
+  height: 500px;
+  z-index: 0;
+}
+.featuersCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 0 15px 5px rgba(1, 6, 33, 0.06);
+  bottom: 0;
+  width: 300px;
+  transition: 0.5s;
+}
+.cardImg {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  background-color: var(--se-color);
+  box-shadow: 3px 3px #876585;
+  width: 55px;
+  padding: 8px;
+  transition: 0.5s;
+}
+
+.icon  {
+  color: white;
+  font-size: 24px;
+}
+.cardTitle {
+  font-family: var(--main-font);
+  font-size: 22px;
+}
+.cardP {
+  font-family: var(--sec-font);
+  font-size: 14px;
+}
+.card:hover {
+  background-color: var(--se-color);
+  color: white;
+  bottom: 10px;
+}
+.card:hover .cardImg {
+  background-color: #876585;
+  border-radius: 62% 38% 46% 54%/60% 63% 37% 40%;
+  box-shadow: 3px 3px #fcb0b4;
+}

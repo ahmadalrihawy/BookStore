@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "desImg": "./images/1.jpg",
+      "name": "Title",
+      "discription": "this is a great book Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat cum culpa nemo perferendis, iure ad iste, adipisci eius sunt ipsum, recusandae libero praesentium esse debitis a aliquam voluptas sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat cum culpa nemo perferendis, iure ad iste, adipisci eius sunt ipsum, recusandae libero praesentium esse debitis a aliquam voluptas sit?       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat cum culpa nemo perferendis, iure ad iste, adipisci eius sunt ipsum, recusandae libero praesentium esse debitis a aliquam voluptas sit?",
+      "price": 27000,
+      "id": "ade7"
+    },
+    {
+      "desImg": "./images/2.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 22000,
+      "id": "9f25"
+    },
+    {
+      "desImg": "./images/3.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 25000,
+      "id": "a1e6"
+    },
+    {
+      "desImg": "./images/4.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 30000,
+      "id": "cdc6"
+    },
+    {
+      "desImg": "./images/5.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 28000,
+      "id": "b29e"
+    },
+    {
+      "desImg": "./images/2.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 24000,
+      "id": "e6dd"
+    },
+    {
+      "desImg": "./images/3.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 24500,
+      "id": "da4a"
+    },
+    {
+      "desImg": "./images/1.jpg",
+      "name": "Title",
+      "discription": "this is a great book",
+      "price": 21000,
+      "id": "078e"
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "price": 51207
+    }
+  ]
+}

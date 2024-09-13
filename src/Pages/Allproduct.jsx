@@ -1,0 +1,41 @@
+import { useNavigate } from "react-router-dom";
+import AddToCartBtn from "../components/Products/AddToCartBtn";
+import styles from "../components/Products/Products.module.css";
+import Cart from "../components/Cart/Cart";
+
+function AllProduct({ bookObj }) {
+  const navigate = useNavigate();
+
+  const truncateDescription = (desc) => {
+    if (desc.length > 20) {
+      return desc.substring(0, 20) + "...";
+    }
+    return desc;
+  };
+  const handleNavigate = () => {
+    navigate(`/book/${bookObj.id}`);
+  };
+
+  return (
+    <>
+      <Cart />
+      <div className={styles.card}>
+        <div className={styles.cardImg} onClick={handleNavigate}>
+          <img src={bookObj.imageUrlL} alt="" />
+        </div>
+        <div className={styles.cardInfo}>
+          <div className={styles.title}>
+            <h3>{truncateDescription(bookObj.bookTitle)}</h3>
+            <AddToCartBtn bookObj={bookObj} />
+          </div>
+          <p className={styles.desc}>
+            {truncateDescription(bookObj.bookAuthor)}
+          </p>
+          <span className={styles.price}>{bookObj.price} S.P</span>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default AllProduct;

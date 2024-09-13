@@ -1,0 +1,33 @@
+.productCartContainer{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-radius: 16px;
+}
+.productCart{
+  display: flex;
+  gap: 20px;
+  img{
+    width: 50px;
+  }
+}
+.productContent{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  p{
+    font-family: var(--main-font);
+    color: var(--se-color);
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+  }
+  span{
+    
+    font-size: 18px;
+    font-family: var(--sec-font);
+  }
+}

@@ -1,0 +1,11 @@
+.ChaptersPreview {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--main-color);
+}
+.cardsContainer {
+  margin-top: 75px;
+  display: flex;
+  gap: 10px;
+}

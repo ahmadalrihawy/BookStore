@@ -1,0 +1,37 @@
+.dashboardTitle{
+  font-family: var(--main-font);
+  color: var(--se-color);
+}
+.orderCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.orderCard{
+  border: 1px solid var(--se-color);
+  padding: 10px;
+  border-radius: 5px;
+
+}
+.orderCard p {
+  font-family: var(--sec-font);
+}
+.orderCard h3{
+  font-family: var(--main-font);
+  color: var(--se-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.infos {
+  display: flex;
+  gap: 10px;
+}
+.orderCard ul {
+  list-style: none;
+  font-family: var(--sec-font);
+  
+}
+.orderCard ul li{
+  padding-bottom: 10px;
+}

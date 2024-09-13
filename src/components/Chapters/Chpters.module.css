@@ -1,0 +1,65 @@
+.chapters {
+  position: relative;
+  height: 95vh;
+  padding-top: 50px;
+  background-color: var(--main-color);
+}
+
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.chapterPhoto img {
+  width: 525px;
+}
+.chapterCards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px 0 rgba(1, 6, 33, 0.06);
+  transition: 0.3s;
+}
+.active{ 
+  height: 150px;
+}
+
+.card .cardTitle {
+  width: 565px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--main-font);
+  transition: 0.3s;
+}
+.cardTitle {
+  background-color: var(--se-color);
+  transition: 0.3s;
+}
+.arrow {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.cardP {
+  width: 565px;
+  padding: 10px;
+  font-family: var(--sec-font);
+  color: black;
+  font-size: 14px;
+}

@@ -1,0 +1,48 @@
+.heading p {
+  margin: 10px auto;
+  text-align: center;
+  font-family: var(--sec-font);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--se-color);
+  letter-spacing: 2px;
+}
+.heading h2 {
+  margin: 10px auto;
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--tx-color);
+}
+.divider {
+  position: relative;
+  margin: 10px auto;
+  margin-top: 25px;
+  width: 200px;
+  height: 2px;
+  background-color: #e7cacc;
+  opacity: 0.8;
+}
+.divider::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 85px;
+  background-color: #e7cacc;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: 85px;
+  background-color: #e7cacc;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}

@@ -1,0 +1,164 @@
+.preview {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 100px;
+}
+.card {
+  z-index: 0;
+  width: 250px;
+  height: 360px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 0 15px 5px rgba(1, 6, 33, 0.06);
+}
+.cardImg{
+  cursor: pointer;
+}
+.cardImg img {
+  width: 100%;
+  border-radius: 5px;
+}
+.cardInfo {
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  bottom: -60px;
+  transition: 0.5s;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  margin: 0;
+}
+.title {
+  font-family: var(--main-font);
+  font-size: 18px;
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title h3{
+  width: 70%;
+}
+.heartContainer {
+  --heart-color: rgb(135 101 133);
+  position: relative;
+  width: 32px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svgOutline,
+.svgFilled {
+  fill: rgb(135 101 133);
+  position: absolute;
+}
+
+.svgFilled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+.svgCelebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate 0.5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: rgb(135 101 133);
+  fill: rgb(135 101 133);
+  stroke-width: 2px;
+}
+
+.heartContainer{
+  z-index: 2;
+  position: relative;
+}
+.heartContainer .checkbox:checked ~ .svgContainer .svgFilled {
+  display: block;
+}
+
+.heartContainer .checkbox:checked ~ .svg-container .svgCelebrate {
+  display: block;
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.cardInfo .desc {
+  color: var(--tx-color);
+  font-size: 15px;
+  font-family: var(--sec-font);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card:hover .cardInfo {
+  bottom: 0px;
+}
+.price{
+  color: rgb(135 101 133);
+  font-family: var(--sec-font);
+  font-weight: 500;
+}
+.btn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  text-decoration: none;
+}

@@ -1,0 +1,65 @@
+.login,
+.signup {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  background-color: var(--se-color);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+  transition: 0.5s;
+  font-family: var(--sec-font);
+}
+.signup {
+  background-color: transparent;
+  border: 1px solid var(--se-color);
+  color: var(--tx-color);
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.login span,
+.signup span {
+  position: relative;
+  z-index: 999;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #876585;
+  border-radius: 4px;
+
+  transition: 0.5s;
+  opacity: 0;
+}
+.signup::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  height: 101%;
+  width: 0%;
+  background-color: #876585;
+  border-radius: 4px;
+
+  transition: 0.5s;
+  opacity: 0;
+}
+.login:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+.signup:hover {
+  border: 1px solid #876585;
+  color: white;
+}
+.signup:hover::before {
+  width: 102%;
+  opacity: 1;
+}

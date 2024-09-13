@@ -1,0 +1,53 @@
+.footer {
+  position: relative;
+  background-color: var(--main-color);
+
+  padding-top: 50px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 24px;
+  font-family: var(--main-font);
+  font-weight: bold;
+  color: var(--tx-color);
+}
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.links a{
+  text-decoration: none;
+}
+.links span {
+  font-size: 20px;
+  color: var(--tx-color);
+  font-family: var(--sec-font);
+  transition: 0.3s;
+  text-decoration: none !important;
+  
+  
+}
+.links span:hover {
+  color: var(--se-color);
+}
+.socials {
+  display: flex;
+  justify-content: right;
+  gap: 25px;
+}
+.icon {
+  background-color: var(--se-color);
+  padding: 10px;
+  font-size: 25px;
+  box-shadow: 3px 3px #876585;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.icon:hover {
+  box-shadow: 0px 0px #876585;
+}

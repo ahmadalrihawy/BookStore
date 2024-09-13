@@ -1,0 +1,11 @@
+{
+  "card": [
+    {
+      "desImg": "./images/image-waffle-desktop.jpg",
+      "thumbImg": "./images/image-waffle-thumbnail.jpg",
+      "name": "Waffle",
+      "discription": "Waffle with Berries",
+      "price": 6.5
+    }
+  ]
+}
